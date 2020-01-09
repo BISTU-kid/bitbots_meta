@@ -111,6 +111,7 @@ class Target:
         rory = "wolfgang_ws"
         jack = "wolfgang_ws"
         donna = "wolfgang_ws"
+        melody = "wolfgang_ws"
         davros = "davros_ws"
 
     class RobotComputers:
@@ -118,6 +119,7 @@ class Target:
         rory = [c + "2" for c in ["nuc", "odroid", "jetson"]]
         jack = [c + "3" for c in ["nuc", "odroid", "jetson"]]
         donna = [c + "4" for c in ["nuc", "odroid", "jetson"]]
+        melody = [c + "5" for c in ["nuc", "odroid", "jetson"]]
         davros = ["davros"]
 
     class IPs:
@@ -134,6 +136,10 @@ class Target:
         nuc4 = __prefix__ + "14"
         odroid4 = __prefix__ + "24"
         jetson4 = __prefix__ + "34"
+        nuc5 = __prefix__ + "15"
+        odroid5 = __prefix__ + "25"
+        jetson5 = __prefix__ + "35"
+        
         davros = __prefix__ + "25"
 
     def __init__(self, ip, ssh_target):
